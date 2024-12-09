@@ -94,10 +94,11 @@ export default function UploadAnswer({ user_id, challenge_id, total_test_case }:
     data.append('challengeId', challenge_id ?? "");
     data.append('file', file);
 
+    const baseUrl = process.env.REACT_APP_API_BASE_URL
     const config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:8000/submitAnswer',
+      url: `${baseUrl}/submitAnswer`,
       headers: { 
         'Authorization': `Bearer ${token}`, 
       },

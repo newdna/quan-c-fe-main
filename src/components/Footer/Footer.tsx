@@ -20,7 +20,7 @@ const Footer = () => {
   const email = "project.quanc@gmail.com";
 
   const imageButtons = [
-    { src: `${process.env.PUBLIC_URL}/quan-c-logo-mini.svg`, link: "http://localhost:3000", alt: "Image 1" },
+    { src: `${process.env.PUBLIC_URL}/quan-c-logo-mini.svg`, link: "https://projectquanc.com", alt: "Image 1" },
     { src: `${process.env.PUBLIC_URL}/discord.svg`, link: "https://discord.com/invite/5ZUsk7q5vq", alt: "Image 2" },
   ];
 

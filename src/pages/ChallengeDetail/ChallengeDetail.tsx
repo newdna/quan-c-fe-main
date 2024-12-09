@@ -26,7 +26,8 @@ const ChallengeDetail = () => {
   useEffect(() => {
     const fetchChallengeDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/getChallengeDetails/${id}`);
+        const url = process.env.REACT_APP_API_BASE_URL
+        const response = await fetch(`${url}/getChallengeDetails/${id}`);
         const data = await response.json();
         setChallengeDetail(data.data);
       } catch (error) {
